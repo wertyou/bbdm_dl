@@ -1,6 +1,6 @@
 # Simple bbdm deep learning's code framework
 ## Introduce
-这份代码感觉基本可以对付常规的实验需求了。代码写的一般，可以作为一个简单的参考。  
+Deep learning 做序列，感觉这份代码基本可以对付常规的实验需求了。代码写的一般，可以作为一个简单的参考。大神略过。  
 ## Requirements
 * Python 3.5
 * Keras 2.2
