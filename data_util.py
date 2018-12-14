@@ -4,6 +4,10 @@ from keras.utils.vis_utils import plot_model
 
 # Model visualization
 def visual_model(model):
+    # Display model summary
+    print(model.summary())
+
+    # Visual model
     plot_model(model, to_file='./image/model.png', show_shapes=True)
 
 
@@ -40,5 +44,3 @@ def visual_pr(recall, precision, url):
     plt.xlabel('recall')
     plt.ylabel('precision')
     plt.savefig(url)
-
-

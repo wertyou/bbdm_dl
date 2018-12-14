@@ -1,10 +1,9 @@
-from keras.layers import LSTM, Dense, Dropout, concatenate, Input
+from keras.layers import LSTM, Dense, Dropout, Input
 from keras.utils import multi_gpu_model
 from keras.callbacks import EarlyStopping
 from keras.models import Model
 
 import data_parameters as par
-import data_util
 import data_cv as pre
 
 # Get sequence max length
@@ -32,11 +31,5 @@ def lstm():
 
     # Call multi gpus acceleration;  require : gpu_num >= 2
     # model = multi_gpu_model(model, gpus=par.gpu_num)
-
-    # Model visualization
-    data_util.visual_model(model)
-
-    # Display model summary
-    print(model.summary())
 
     return model
